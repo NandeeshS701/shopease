@@ -1,341 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>make-up brands</title>
 
-    <script src="script.js"></script> 
-    
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header class="navbar">
+<title>Makeup Store</title>
 
-    <div class="logo">
-        Amazon make-up
-    </div>
-
-    <a href="index.html" class="home-btn">
-        ← Back to Home
-    </a>
-
-</header>
-
-<h1 class="title">make-up Accessories</h1>
-<section class="products">
-
-    <div class="product">
-        <img src="https://images-static.nykaa.com/media/catalog/product/a/c/ace0642LOREA00000356_9.jpg?tr=w-500">
-        <h3>L'Oréal Paris Shampoo</h3>
-        <h2>₹599</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('L’Oréal Paris Shampoo',599,'https://images-static.nykaa.com/media/catalog/product/a/c/ace0642LOREA00000356_9.jpg?tr=w-500')">
-        Add to Cart
-        </button>
-    </div>
+<script src="script.js" defer></script>
 
 
-    <div class="product">
-        <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2,q-40/static/img/product/353001/maybelline-superstay-vinyl-ink-liquid-lipstick-irresistible-4-2ml-high-shine-that-lasts-for-16-hrs_1_display_1683190510_a64bd98e.jpg">
-        <h3>Maybelline Lipstick</h3>
-        <h2>₹499</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('Maybelline Lipstick',499,'https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2,q-40/static/img/product/353001/maybelline-superstay-vinyl-ink-liquid-lipstick-irresistible-4-2ml-high-shine-that-lasts-for-16-hrs_1_display_1683190510_a64bd98e.jpg')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://www.lakmeindia.com/cdn/shop/files/22362_H-8901030974045.jpg?v=1702537383">
-        <h3>Lakme Face Cream</h3>
-        <h2>₹399</h2>
-        <p>⭐⭐⭐⭐☆</p>
-        <button onclick="addToCart('Lakme Face Cream',399,'https://www.lakmeindia.com/cdn/shop/files/22362_H-8901030974045.jpg?v=1702537383')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://5.imimg.com/data5/GX/QP/MY-70505455/mac-perfect-make-up-kit-500x500.jpg">
-        <h3>MAC Makeup Kit</h3>
-        <h2>₹2,999</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('MAC Makeup Kit',2999,'https://5.imimg.com/data5/GX/QP/MY-70505455/mac-perfect-make-up-kit-500x500.jpg')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://images-static.nykaa.com/media/catalog/product/3/f/3ffc0e28904256009812_1.jpg?tr=w-500">
-        <h3>Nivea Body Lotion</h3>
-        <h2>₹299</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('https://images-static.nykaa.com/media/catalog/product/3/f/3ffc0e28904256009812_1.jpg?tr=w-500')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://m.media-amazon.com/images/I/71oKYkbMSBL._AC_UF1000,1000_QL80_.jpg">
-        <h3>Perfume For Women</h3>
-        <h2>₹899</h2>
-        <p>⭐⭐⭐⭐☆</p>
-        <button onclick="addToCart('https://m.media-amazon.com/images/I/71oKYkbMSBL._AC_UF1000,1000_QL80_.jpg')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://www.biotique.com/cdn/shop/articles/Facewash-banner-1_5c544846-e1a2-4edf-aa3c-7b22dafd4bf8.jpg?v=1764325310">
-        <h3>Face Wash</h3>
-        <h2>₹249</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('Face Wash',249,'https://www.biotique.com/cdn/shop/articles/Facewash-banner-1_5c544846-e1a2-4edf-aa3c-7b22dafd4bf8.jpg?v=1764325310')">
-        Add to Cart
-        </button>
-    </div>
-
-
-    <div class="product">
-        <img src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/combo-kit/d/d/f/oil-free-complete-skincare-combo-5-step-routine-kit-for-unisex-original-imahgtj4frkjuvcs.jpeg?q=70">
-        <h3>Beauty Care Combo Kit</h3>
-        <h2>₹1,499</h2>
-        <p>⭐⭐⭐⭐⭐</p>
-        <button onclick="addToCart('https://rukmini1.flixcart.com/image/1500/1500/xif0q/combo-kit/d/d/f/oil-free-complete-skincare-combo-5-step-routine-kit-for-unisex-original-imahgtj4frkjuvcs.jpeg?q=70')">
-        Add to Cart
-        </button>
-    </div>
-
-</section>
-</body>
 <style>
-    *{
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 body{
+
     background:#eef5f9;
+
 }
 
-/*=========================
-        NAVBAR
-=========================*/
+
 
 .navbar{
+
     background:#0B4F6C;
+
     height:70px;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     padding:0 40px;
+
     color:white;
+
     box-shadow:0 4px 12px rgba(0,0,0,.2);
+
 }
+
+
 
 .logo{
+
     font-size:32px;
+
     font-weight:bold;
+
     color:#FFD166;
+
 }
+
+
 
 .home-btn{
+
     text-decoration:none;
+
     color:white;
+
     background:#FF9800;
+
     padding:12px 20px;
+
     border-radius:8px;
+
     font-weight:bold;
-    transition:.3s;
+
 }
+
+
 
 .home-btn:hover{
+
     background:#e68900;
+
 }
 
-/*=========================
-      PAGE TITLE
-=========================*/
+
+
 
 .title{
+
     text-align:center;
+
     margin:35px 0;
+
     color:#0B4F6C;
+
     font-size:40px;
+
 }
 
-/*=========================
-      PRODUCTS GRID
-=========================*/
+
+
+
 
 .products{
+
     width:95%;
+
     max-width:1400px;
+
     margin:auto;
+
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
+
     gap:30px;
+
     padding-bottom:40px;
+
 }
 
-/*=========================
-      PRODUCT CARD
-=========================*/
+
+
 
 .product{
+
     background:white;
+
     border-radius:15px;
+
     padding:20px;
+
     text-align:center;
+
     box-shadow:0 5px 15px rgba(0,0,0,.15);
+
     transition:.3s;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:space-between;
+
     height:500px;
+
 }
+
+
 
 .product:hover{
+
     transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
 }
 
-/*=========================
-      PRODUCT IMAGE
-=========================*/
+
+
 
 .product img{
+
     width:220px;
+
     height:220px;
+
     object-fit:contain;
-    display:block;
+
     margin:auto;
-    transition:.3s;
+
 }
+
+
 
 .product:hover img{
+
     transform:scale(1.05);
+
 }
 
-/*=========================
-      PRODUCT NAME
-=========================*/
+
+
 
 .product h3{
+
     color:#0B4F6C;
+
     font-size:22px;
+
     height:60px;
+
     display:flex;
-    align-items:center;
+
     justify-content:center;
-    margin-top:15px;
+
+    align-items:center;
+
 }
 
-/*=========================
-      PRICE
-=========================*/
+
 
 .product h2{
+
     color:#E53935;
+
     font-size:28px;
-    margin:10px 0;
+
 }
 
-/*=========================
-      RATING
-=========================*/
+
 
 .product p{
+
     color:#FF9800;
+
     font-size:18px;
-    margin-bottom:18px;
+
 }
 
-/*=========================
-      BUTTON
-=========================*/
+
+
 
 .product button{
+
     width:100%;
+
     height:45px;
+
     border:none;
+
     border-radius:8px;
+
     background:#FF9800;
+
     color:white;
+
     font-size:17px;
+
     font-weight:bold;
+
     cursor:pointer;
-    transition:.3s;
+
 }
+
+
 
 .product button:hover{
+
     background:#e68900;
+
 }
 
-/*=========================
-      RESPONSIVE
-=========================*/
+
+
 
 @media(max-width:1200px){
 
-    .products{
-        grid-template-columns:repeat(3,1fr);
-    }
+.products{
+
+grid-template-columns:repeat(3,1fr);
 
 }
+
+}
+
+
 
 @media(max-width:900px){
 
-    .products{
-        grid-template-columns:repeat(2,1fr);
-    }
+.products{
 
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:15px;
-        gap:15px;
-    }
+grid-template-columns:repeat(2,1fr);
 
 }
+
+}
+
+
 
 @media(max-width:600px){
 
-    .products{
-        grid-template-columns:1fr;
-    }
+.products{
 
-    .logo{
-        font-size:26px;
-    }
-
-    .title{
-        font-size:30px;
-    }
-
-    .home-btn{
-        width:100%;
-        text-align:center;
-    }
-
-    .product{
-        height:auto;
-    }
-
-    .product img{
-        width:180px;
-        height:180px;
-    }
+grid-template-columns:1fr;
 
 }
-</style>
-</html>
 
+.navbar{
+
+flex-direction:column;
+
+height:auto;
+
+gap:15px;
+
+padding:20px;
+
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<header class="navbar">
+
+
+<div class="logo">
+
+Amazon Makeup
+
+</div>
+
+
+
+<a href="index.html" class="home-btn">
+
+← Back to Home
+
+</a>
+
+
+</header>
+
+
+
+
+
+<h1 class="title">
+
+Makeup Accessories
+
+</h1>
+
+
+
+
+
+<section class="products">
+
+
+
+
+
+<div class="product">
+
+<img src="https://images-static.nykaa.com/media/catalog/product/a/c/ace0642LOREA00000356_9.jpg?tr=w-500">
+
+<h3>L'Oréal Paris Shampoo</h3>
+
+<h2>₹599</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('L’Oréal Paris Shampoo',599,'https://images-static.nykaa.com/media/catalog/product/a/c/ace0642LOREA00000356_9.jpg?tr=w-500')">
+
+Add to Cart
+
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="product">
+
+<img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2,q-40/static/img/product/353001/maybelline-superstay-vinyl-ink-liquid-lipstick-irresistible-4-2ml-high-shine-that-lasts-for-16-hrs_1_display_1683190510_a64bd98e.jpg">
+
+
+<h3>Maybelline Lipstick</h3>
+
+<h2>₹499</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('Maybelline Lipstick',499,'https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2,q-40/static/img/product/353001/maybelline-superstay-vinyl-ink-liquid-lipstick-irresistible-4-2ml-high-shine-that-lasts-for-16-hrs_1_display_1683190510_a64bd98e.jpg')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://www.lakmeindia.com/cdn/shop/files/22362_H-8901030974045.jpg?v=1702537383">
+
+
+<h3>Lakme Face Cream</h3>
+
+<h2>₹399</h2>
+
+<p>⭐⭐⭐⭐☆</p>
+
+
+<button onclick="addToCart('Lakme Face Cream',399,'https://www.lakmeindia.com/cdn/shop/files/22362_H-8901030974045.jpg?v=1702537383')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://5.imimg.com/data5/GX/QP/MY-70505455/mac-perfect-make-up-kit-500x500.jpg">
+
+
+<h3>MAC Makeup Kit</h3>
+
+<h2>₹2999</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('MAC Makeup Kit',2999,'https://5.imimg.com/data5/GX/QP/MY-70505455/mac-perfect-make-up-kit-500x500.jpg')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://images-static.nykaa.com/media/catalog/product/3/f/3ffc0e28904256009812_1.jpg?tr=w-500">
+
+
+<h3>Nivea Body Lotion</h3>
+
+<h2>₹299</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('Nivea Body Lotion',299,'https://images-static.nykaa.com/media/catalog/product/3/f/3ffc0e28904256009812_1.jpg?tr=w-500')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://m.media-amazon.com/images/I/71oKYkbMSBL._AC_UF1000,1000_QL80_.jpg">
+
+
+<h3>Perfume For Women</h3>
+
+<h2>₹899</h2>
+
+<p>⭐⭐⭐⭐☆</p>
+
+
+<button onclick="addToCart('Perfume For Women',899,'https://m.media-amazon.com/images/I/71oKYkbMSBL._AC_UF1000,1000_QL80_.jpg')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://www.biotique.com/cdn/shop/articles/Facewash-banner-1_5c544846-e1a2-4edf-aa3c-7b22dafd4bf8.jpg?v=1764325310">
+
+
+<h3>Face Wash</h3>
+
+<h2>₹249</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('Face Wash',249,'https://www.biotique.com/cdn/shop/articles/Facewash-banner-1_5c544846-e1a2-4edf-aa3c-7b22dafd4bf8.jpg?v=1764325310')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product">
+
+
+<img src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/combo-kit/d/d/f/oil-free-complete-skincare-combo-5-step-routine-kit-for-unisex-original-imahgtj4frkjuvcs.jpeg?q=70">
+
+
+<h3>Beauty Care Combo Kit</h3>
+
+<h2>₹1499</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+
+<button onclick="addToCart('Beauty Care Combo Kit',1499,'https://rukmini1.flixcart.com/image/1500/1500/xif0q/combo-kit/d/d/f/oil-free-complete-skincare-combo-5-step-routine-kit-for-unisex-original-imahgtj4frkjuvcs.jpeg?q=70')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+</body>
+
+</html>
