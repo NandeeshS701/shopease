@@ -4,14 +4,17 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Apple Store</title>
+
 
 <script src="script.js" defer></script>
 
 
 <style>
+
 
 *{
     margin:0;
@@ -20,43 +23,65 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 body{
+
     background:#eef5f9;
+
 }
 
+
+/* NAVBAR */
 
 .navbar{
 
     background:#0B4F6C;
-    height:70px;
+
+    min-height:80px;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    padding:0 40px;
-    color:white;
+
+    padding:0 50px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
 
 }
 
 
 .logo{
 
-    font-size:32px;
+    font-size:30px;
+
     font-weight:bold;
+
     color:#FFD166;
 
+    white-space:nowrap;
+
 }
+
 
 
 .home-btn{
 
     text-decoration:none;
+
     color:white;
+
     background:#FF9800;
-    padding:12px 20px;
+
+    padding:12px 22px;
+
     border-radius:8px;
+
     font-weight:bold;
 
 }
+
 
 
 .home-btn:hover{
@@ -67,11 +92,17 @@ body{
 
 
 
+/* TITLE */
+
+
 .title{
 
     text-align:center;
+
     margin:35px 0;
+
     color:#0B4F6C;
+
     font-size:40px;
 
 }
@@ -79,10 +110,16 @@ body{
 
 
 
+
+/* PRODUCT GRID */
+
+
 .products{
 
     width:95%;
+
     max-width:1400px;
+
     margin:auto;
 
     display:grid;
@@ -91,7 +128,11 @@ body{
 
     gap:30px;
 
+    padding-bottom:40px;
+
 }
+
+
 
 
 
@@ -104,11 +145,9 @@ body{
 
     padding:20px;
 
-    text-align:center;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-
     height:500px;
+
+    text-align:center;
 
     display:flex;
 
@@ -116,7 +155,12 @@ body{
 
     justify-content:space-between;
 
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
 }
+
 
 
 
@@ -128,8 +172,9 @@ body{
 
 
 
-.product img{
 
+
+.product img{
 
     width:220px;
 
@@ -143,6 +188,8 @@ body{
 
 
 
+
+
 .product h3{
 
     color:#0B4F6C;
@@ -150,6 +197,8 @@ body{
     font-size:22px;
 
 }
+
+
 
 
 
@@ -163,26 +212,31 @@ body{
 
 
 
+
+
 .product p{
 
     color:#FF9800;
+
+    font-size:18px;
 
 }
 
 
 
-.product button{
 
+
+.product button{
 
     width:100%;
 
     height:45px;
 
-    background:#FF9800;
-
     border:none;
 
     border-radius:8px;
+
+    background:#FF9800;
 
     color:white;
 
@@ -196,11 +250,14 @@ body{
 
 
 
+
 .product button:hover{
 
     background:#e68900;
 
 }
+
+
 
 
 
@@ -215,6 +272,7 @@ grid-template-columns:repeat(3,1fr);
 }
 
 
+
 @media(max-width:900px){
 
 .products{
@@ -223,7 +281,19 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
+
+.navbar{
+
+flex-direction:column;
+
+gap:20px;
+
+padding:20px;
+
 }
+
+}
+
 
 
 @media(max-width:600px){
@@ -234,19 +304,22 @@ grid-template-columns:1fr;
 
 }
 
-.navbar{
 
-flex-direction:column;
+.logo{
 
-height:auto;
+font-size:25px;
 
-padding:20px;
+}
 
-gap:15px;
+
+.title{
+
+font-size:30px;
 
 }
 
 }
+
 
 
 </style>
@@ -265,9 +338,10 @@ gap:15px;
 
 <div class="logo">
 
-Apple Store
+ Apple Store
 
 </div>
+
 
 
 <a href="index.html" class="home-btn">
@@ -278,6 +352,7 @@ Apple Store
 
 
 </header>
+
 
 
 
@@ -300,17 +375,32 @@ Apple Accessories
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_16_Pro_Max_Desert_Titanium.svg">
+<img src="https://www.apple.com/v/iphone-16-pro/c/images/overview/welcome/hero_endframe__b3cjfkquc2s2_xlarge.jpg">
 
 
-<h3>iPhone 16 Pro Max</h3>
+<h3>
 
-<h2>₹1,19,999</h2>
+iPhone 16 Pro Max
 
-<p>⭐⭐⭐⭐⭐</p>
+</h3>
 
 
-<button onclick="addToCart('iPhone 16 Pro Max',119999,'https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_16_Pro_Max_Desert_Titanium.svg')">
+<h2>
+
+₹1,19,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+
+<button onclick="addToCart('iPhone 16 Pro Max',119999,'https://www.apple.com/v/iphone-16-pro/c/images/overview/welcome/hero_endframe__b3cjfkquc2s2_xlarge.jpg')">
 
 Add to Cart
 
@@ -318,8 +408,6 @@ Add to Cart
 
 
 </div>
-
-
 
 
 
@@ -329,17 +417,32 @@ Add to Cart
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/IPhone_16_Pro_Max_White_Titanium.svg">
+<img src="https://www.apple.com/v/iphone-16/images/overview/product-viewer/iphone-16/blue/iphone-16-blue-back.png">
 
 
-<h3>iPhone 16</h3>
+<h3>
 
-<h2>₹79,999</h2>
+iPhone 16
 
-<p>⭐⭐⭐⭐⭐</p>
+</h3>
 
 
-<button onclick="addToCart('iPhone 16',79999,'https://upload.wikimedia.org/wikipedia/commons/a/ad/IPhone_16_Pro_Max_White_Titanium.svg')">
+<h2>
+
+₹79,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+
+<button onclick="addToCart('iPhone 16',79999,'https://www.apple.com/v/iphone-16/images/overview/product-viewer/iphone-16/blue/iphone-16-blue-back.png')">
 
 Add to Cart
 
@@ -347,8 +450,6 @@ Add to Cart
 
 
 </div>
-
-
 
 
 
@@ -358,17 +459,69 @@ Add to Cart
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_15_Pro_Blue_Titanium.svg">
+<img src="https://www.apple.com/v/iphone-15/images/overview/hero/hero_iphone15.jpg">
 
 
-<h3>iPhone 15</h3>
+<h3>
 
-<h2>₹59,999</h2>
+iPhone 15
 
-<p>⭐⭐⭐⭐⭐</p>
+</h3>
 
 
-<button onclick="addToCart('iPhone 15',59999,'https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_15_Pro_Blue_Titanium.svg')">
+<h2>
+
+₹59,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+
+<button onclick="addToCart('iPhone 15',59999,'https://www.apple.com/v/iphone-15/images/overview/hero/hero_iphone15.jpg')">
+
+Add to Cart
+
+</button>
+
+
+</div>
+<!-- MacBook Air M3 -->
+
+<div class="product">
+
+
+<img src="https://www.apple.com/v/macbook-air/images/overview/hero/macbook-air_15_hero.jpg">
+
+
+<h3>
+
+MacBook Air M3
+
+</h3>
+
+
+<h2>
+
+₹1,04,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+<button onclick="addToCart('MacBook Air M3',104999,'https://www.apple.com/v/macbook-air/images/overview/hero/macbook-air_15_hero.jpg')">
 
 Add to Cart
 
@@ -382,22 +535,40 @@ Add to Cart
 
 
 
+
+
+<!-- iPad Pro M4 -->
 
 
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/MacBook_Air_M2_Starlight_-_2022.png">
+<img src="https://www.apple.com/v/ipad-pro/images/overview/hero/hero_11_13.jpg">
 
 
-<h3>MacBook Air M3</h3>
+<h3>
 
-<h2>₹1,04,999</h2>
+iPad Pro M4
 
-<p>⭐⭐⭐⭐⭐</p>
+</h3>
 
 
-<button onclick="addToCart('MacBook Air M3',104999,'https://upload.wikimedia.org/wikipedia/commons/1/12/MacBook_Air_M2_Starlight_-_2022.png')">
+<h2>
+
+₹99,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+
+<button onclick="addToCart('iPad Pro M4',99999,'https://www.apple.com/v/ipad-pro/images/overview/hero/hero_11_13.jpg')">
 
 Add to Cart
 
@@ -411,22 +582,39 @@ Add to Cart
 
 
 
+
+
+<!-- Apple Watch Series 10 -->
 
 
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/IPad_Pro_2024.png">
+<img src="https://www.apple.com/v/apple-watch-series-10/images/overview/welcome/hero_endframe__d2z5d7f5x7o2_xlarge.jpg">
 
 
-<h3>iPad Pro M4</h3>
+<h3>
 
-<h2>₹99,999</h2>
+Apple Watch Series 10
 
-<p>⭐⭐⭐⭐⭐</p>
+</h3>
 
 
-<button onclick="addToCart('iPad Pro M4',99999,'https://upload.wikimedia.org/wikipedia/commons/1/1b/IPad_Pro_2024.png')">
+<h2>
+
+₹46,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐☆
+
+</p>
+
+
+<button onclick="addToCart('Apple Watch Series 10',46999,'https://www.apple.com/v/apple-watch-series-10/images/overview/welcome/hero_endframe__d2z5d7f5x7o2_xlarge.jpg')">
 
 Add to Cart
 
@@ -440,22 +628,40 @@ Add to Cart
 
 
 
+
+
+<!-- AirPods Pro 2 -->
 
 
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Apple_Watch_Series_10.png">
+<img src="https://www.apple.com/v/airpods-pro/images/overview/hero/hero__ezonp6r6u6ue_xlarge.jpg">
 
 
-<h3>Apple Watch Series 10</h3>
+<h3>
 
-<h2>₹46,999</h2>
+AirPods Pro 2
 
-<p>⭐⭐⭐⭐☆</p>
+</h3>
 
 
-<button onclick="addToCart('Apple Watch Series 10',46999,'https://upload.wikimedia.org/wikipedia/commons/7/79/Apple_Watch_Series_10.png')">
+<h2>
+
+₹24,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
+
+
+
+<button onclick="addToCart('AirPods Pro 2',24999,'https://www.apple.com/v/airpods-pro/images/overview/hero/hero__ezonp6r6u6ue_xlarge.jpg')">
 
 Add to Cart
 
@@ -469,51 +675,40 @@ Add to Cart
 
 
 
+
+
+<!-- iMac M3 -->
 
 
 <div class="product">
 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/AirPods_Pro_2nd_Generation.png">
+<img src="https://www.apple.com/v/imac/images/overview/hero/hero_endframe__b9w9h8n8u2wi_xlarge.jpg">
 
 
-<h3>AirPods Pro 2</h3>
+<h3>
 
-<h2>₹24,999</h2>
+iMac M3
 
-<p>⭐⭐⭐⭐⭐</p>
-
-
-<button onclick="addToCart('AirPods Pro 2',24999,'https://upload.wikimedia.org/wikipedia/commons/8/8e/AirPods_Pro_2nd_Generation.png')">
-
-Add to Cart
-
-</button>
+</h3>
 
 
-</div>
+<h2>
+
+₹1,29,999
+
+</h2>
+
+
+<p>
+
+⭐⭐⭐⭐⭐
+
+</p>
 
 
 
-
-
-
-
-
-<div class="product">
-
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/IMac_M3_2023.png">
-
-
-<h3>iMac M3</h3>
-
-<h2>₹1,29,999</h2>
-
-<p>⭐⭐⭐⭐⭐</p>
-
-
-<button onclick="addToCart('iMac M3',129999,'https://upload.wikimedia.org/wikipedia/commons/0/00/IMac_M3_2023.png')">
+<button onclick="addToCart('iMac M3',129999,'https://www.apple.com/v/imac/images/overview/hero/hero_endframe__b9w9h8n8u2wi_xlarge.jpg')">
 
 Add to Cart
 
@@ -521,12 +716,14 @@ Add to Cart
 
 
 </div>
+
 
 
 
 
 
 </section>
+
 
 
 </body>
