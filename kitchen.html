@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        kitchen section
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title"> kitchen section</h1>
+<section class="products">
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKY5HC40NrLUtzTLK6o7S80cUwcfDYVZlm5ZGCndkRdK5L7wjgT-hyf-w&s=10">
+        <h3>Non Stick Cooking Pan</h3>
+        <h2>₹999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKY5HC40NrLUtzTLK6o7S80cUwcfDYVZlm5ZGCndkRdK5L7wjgT-hyf-w&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://i5.walmartimages.com/seo/Tramontina-12-Piece-Tri-Ply-Clad-Stainless-Steel-Cookware-Set_750ccfaf-98be-4737-8761-c992a2ca2646.41bf1ae1e157d640b516d389904e1e00.jpeg">
+        <h3>Stainless Steel Cookware Set</h3>
+        <h2>₹2,499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Stainless Steel Cookware Set',2499,'https://i5.walmartimages.com/seo/Tramontina-12-Piece-Tri-Ply-Clad-Stainless-Steel-Cookware-Set_750ccfaf-98be-4737-8761-c992a2ca2646.41bf1ae1e157d640b516d389904e1e00.jpeg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8MG3qw056mOHbMP2FjXGMOU7gjkwV20CG3UTMZt8k4CqcGfTT8V_OGLsK&s=10">
+        <h3>Kitchen Storage Containers</h3>
+        <h2>₹799</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Kitchen Storage Containers',799,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8MG3qw056mOHbMP2FjXGMOU7gjkwV20CG3UTMZt8k4CqcGfTT8V_OGLsK&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Fp8qR1nULLtfjPpq7HbUZ5829bYA_BSD5S2hOefJvAD14Byjxa_OT-Y&s=10">
+        <h3>Electric Mixer Grinder</h3>
+        <h2>₹2,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Electric Mixer Grinder',2999,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Fp8qR1nULLtfjPpq7HbUZ5829bYA_BSD5S2hOefJvAD14Byjxa_OT-Y&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dNIKSvhXdAOAonTjLwmyBuxu0_YNErYREDXCeeKq_Q&s">
+        <h3>Modern Dinner Set</h3>
+        <h2>₹1,499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Modern Dinner Set',1499,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dNIKSvhXdAOAonTjLwmyBuxu0_YNErYREDXCeeKq_Q&s')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPn3AXdSJa55Iau8hc9rE-A4o3K8Q9KocKRKUywGr2Tw&s">
+        <h3>Wooden Cutting Board</h3>
+        <h2>₹499</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Wooden Cutting Board',499,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPn3AXdSJa55Iau8hc9rE-A4o3K8Q9KocKRKUywGr2Tw&s')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61d5Pq0eZjL._AC_UF894,1000_QL80_.jpg">
+        <h3>Automatic Coffee Maker</h3>
+        <h2>₹13,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Automatic Coffee Maker',13999,'https://m.media-amazon.com/images/I/61d5Pq0eZjL._AC_UF894,1000_QL80_.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81dIS4ecWfL._AC_UF894,1000_QL80_.jpg">
+        <h3>Kitchen Knife Set</h3>
+        <h2>₹899</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('https://m.media-amazon.com/images/I/81dIS4ecWfL._AC_UF894,1000_QL80_.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+</section>
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
+</html>

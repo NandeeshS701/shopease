@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Health & personal care section
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title"> Health & personal care section</h1>
+<section class="products">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500">
+        <h3>Face Care Skin Cream</h3>
+        <h2>₹499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Face Care Skin Cream',499,'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500">
+        <h3>Moisturizing Lotion</h3>
+        <h2>₹399</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Moisturizing Lotion',399,'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500">
+        <h3>Vitamin Supplements</h3>
+        <h2>₹699</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Vitamin Supplements',699,'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71Ipo1ZbMFL._AC_UF1000,1000_QL80_.jpg">
+        <h3>Electric Toothbrush</h3>
+        <h2>₹1,299</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Electric Toothbrush',1299,'https://m.media-amazon.com/images/I/71Ipo1ZbMFL._AC_UF1000,1000_QL80_.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500">
+        <h3>Dental Care Kit</h3>
+        <h2>₹599</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Dental Care Kit',599,'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1619451334792-150fd785ee74?w=500">
+        <h3>Hair Care Shampoo</h3>
+        <h2>₹349</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Hair Care Shampoo',349,'https://images.unsplash.com/photo-1619451334792-150fd785ee74?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://brownliving.in/cdn/shop/files/golden-glow-kit-handcrafted-natural-skin-care-lip-care-hamper-the-bare-bar-sustainable-gift-giving-brown-living-8904448008838-883645.jpg?v=1729628148">
+        <h3>Beauty & Wellness Kit</h3>
+        <h2>₹1,499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Beauty & Wellness Kit',1499,'https://brownliving.in/cdn/shop/files/golden-glow-kit-handcrafted-natural-skin-care-lip-care-hamper-the-bare-bar-sustainable-gift-giving-brown-living-8904448008838-883645.jpg?v=1729628148')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPoHVUuOD7WoMWxn0VfXbwZ6sacWoS6I6kURs8jWALA&s=10">
+        <h3>Digital Thermometer</h3>
+        <h2>₹299</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Digital Thermometer',299,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPoHVUuOD7WoMWxn0VfXbwZ6sacWoS6I6kURs8jWALA&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+</section>
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
+</html>

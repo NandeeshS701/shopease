@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        books section
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title"> book section</h1>
+<section class="products">
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg">
+        <h3>Atomic Habits</h3>
+        <h2>₹399</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Atomic Habits',399,'https://m.media-amazon.com/images/I/71g2ednj0JL.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg">
+        <h3>Rich Dad Poor Dad</h3>
+        <h2>₹299</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Rich Dad Poor Dad',299,'https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg">
+        <h3>The Alchemist</h3>
+        <h2>₹250</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('The Alchemist',250,'https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg">
+        <h3>Harry Potter Collection</h3>
+        <h2>₹1,299</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Harry Potter Collection',1299,'https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71lJBs5MNlL._AC_UF1000,1000_QL80_.jpg">
+        <h3>Ikigai</h3>
+        <h2>₹349</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Ikigai',349,'https://m.media-amazon.com/images/I/71lJBs5MNlL._AC_UF1000,1000_QL80_.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg">
+        <h3>Psychology of Money</h3>
+        <h2>₹399</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Psychology of Money',399,'https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/book/w/s/7/deep-work-original-imahmghvmv8asy8m.jpeg?q=70">
+        <h3>Deep Work</h3>
+        <h2>₹450</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Deep Work',450,'https://rukmini1.flixcart.com/image/1500/1500/xif0q/book/w/s/7/deep-work-original-imahmghvmv8asy8m.jpeg?q=70')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWAOUCjKAzkyY1QcIb84D1d16r-OhiJ9TwGmDb3EjHchr6D_beqrSflPS&s=10">
+        <h3>Think Like a Monk</h3>
+        <h2>₹299</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Think Like a Monk',299,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWAOUCjKAzkyY1QcIb84D1d16r-OhiJ9TwGmDb3EjHchr6D_beqrSflPS&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+</section>
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
+</html>

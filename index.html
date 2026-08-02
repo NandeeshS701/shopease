@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <div class="top-bar">
+
+        <a href="login.html" class="login-btn" id="loginBtn">
+            🔑 Login
+        </a>
+
+        <a href="register.html" class="register-btn" id="registerBtn">
+            📝 Register
+        </a>
+
+        <button class="logout-btn" id="logoutBtn" onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+
+                <p class="add-first">
+                    Deliver to
+                </p>
+
+                <div class="add-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <p class="add-sec">
+                        India
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="nav-search">
+
+                <select class="Search-select">
+                    <option>All</option>
+                </select>
+
+                <input
+                    type="text"
+                    placeholder="Search ShopEase"
+                    class="search-input">
+
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+            <a href="profile.html" class="nav-signin border profile-link">
+
+                <p>
+                    <span id="userHello">
+                        <i class="fa-solid fa-user"></i>
+                        Hello, Sign in
+                    </span>
+                </p>
+
+                <p class="nav-second">
+                    Account & Lists
+                </p>
+
+            </a>
+
+            <div class="nav-return border">
+
+                <p>
+                    <span>Returns</span>
+                </p>
+
+                <p class="nav-second">
+                    & Orders
+                </p>
+
+            </div>
+
+            <div class="nav-cart border" onclick="toggleCart()">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Cart
+                (
+                <span id="cartCount">0</span>
+                )
+
+            </div>
+
+        </div>
+
+        <!-- Panel -->
+
+        <div class="panel">
+
+            <div class="panel-all border">
+
+                <i class="fa-solid fa-bars"></i>
+
+                All
+
+            </div>
+
+            <div class="panel-ops">
+
+                <p>Today's Deals</p>
+
+                <p>Customer Services</p>
+
+                <p>Registry</p>
+
+                <p>Gift Cards</p>
+
+                <p>Sell</p>
+
+            </div>
+
+            <div class="panel-deals">
+
+                Discover Amazing Deals
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="hero-section">
+
+        <div class="hero-msg">
+
+            <p>
+
+                Welcome to <strong>ShopEase</strong>.
+                Discover thousands of quality products with fast delivery across India.
+
+                <a href="#">
+                    Start Shopping Now
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Shop Section -->
+
+    <div class="shop-section">
+
+        <!-- Box 1 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="gaming.html" class="category-link">
+
+                    <h2>Get your game on</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box1_image.jpg');">
+                    </div>
+
+                    <p>Shop gaming</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 2 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="refresh.html" class="category-link">
+
+                    <h2>Refresh your space</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box2_image.jpg');">
+                    </div>
+
+                    <p>See more</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 3 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="fashion.html" class="category-link">
+
+                    <h2>Fashion Trends</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box8_image.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 4 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="mobiles.html" class="category-link">
+
+                    <h2>Smart Phone Deals</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box4_image.jpg');">
+                    </div>
+
+                    <p>Discover more</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 5 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="beauty.html" class="category-link">
+
+                    <h2>Make-up Brands</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box5_image.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 6 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="apple.html" class="category-link">
+
+                    <h2>Apple Discounts</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box6_image.jpg');">
+                    </div>
+
+                    <p>See more</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 7 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="toys.html" class="category-link">
+
+                    <h2>Toys & Games</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('box7_image.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 8 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="health.html" class="category-link">
+
+                    <h2>Health & Personal Care</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('health.jpg');">
+                    </div>
+
+                    <p>Explore</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 9 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="kitchen.html" class="category-link">
+
+                    <h2>Kitchen Essentials</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('kitchen.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 10 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="books.html" class="category-link">
+
+                    <h2>Popular Books</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('books.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Box 11 -->
+
+        <div class="box">
+
+            <div class="box-content">
+
+                <a href="imported.html" class="category-link">
+
+                    <h2>Imported Chocolate</h2>
+
+                    <div class="box-img"
+                        style="background-image:url('imported chocolate.jpg');">
+                    </div>
+
+                    <p>Shop now</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+<div class="foot-panel1">
+    Back to Top
+</div>
+
+<div class="foot-panel2">
+
+    <ul>
+
+        <p>Get to Know Us</p>
+
+        <a>Careers</a>
+        <a>About ShopEase</a>
+        <a>Investor Relations</a>
+        <a>ShopEase Marketplace</a>
+        <a>Our Services</a>
+        <a>Blog</a>
+
+    </ul>
+
+    <ul>
+
+        <p>Partner With Us</p>
+
+        <a>Sell Products on ShopEase</a>
+        <a>Become a ShopEase Seller</a>
+        <a>Sell Digital Products</a>
+        <a>Become an Affiliate</a>
+        <a>Advertise Your Products</a>
+        <a>Start Your Online Store</a>
+        <a>Become a Delivery Partner</a>
+        <a>Explore Business Opportunities</a>
+
+    </ul>
+
+    <ul>
+
+        <p>Payments & Wallet</p>
+
+        <a>ShopEase Wallet</a>
+        <a>Gift Cards</a>
+        <a>Reload Your Wallet</a>
+        <a>Secure Payments</a>
+
+    </ul>
+
+    <ul>
+
+        <p>Customer Support</p>
+
+        <a>Help Center</a>
+        <a>Your Account</a>
+        <a>Your Orders</a>
+        <a>Shipping Information</a>
+        <a>Returns & Refunds</a>
+        <a>Manage Your Account</a>
+        <a>Contact Us</a>
+
+    </ul>
+
+</div>
+
+<div class="foot-panel3">
+
+    <div class="logo"></div>
+
+</div>
+
+<div class="foot-panel4">
+
+    <div class="pages">
+
+        <a>Terms & Conditions</a>
+        <a>Privacy Policy</a>
+        <a>Cookie Policy</a>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 ShopEase. All Rights Reserved.
+
+    </div>
+
+</div>
+
+</footer>
+
+<!-- Cart Box -->
+
+<div id="cartBox" class="cart-box">
+
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>
+        Total : ₹<span id="totalPrice">0</span>
+    </h3>
+
+    <button onclick="placeOrder()">
+        Place Order
+    </button>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+        

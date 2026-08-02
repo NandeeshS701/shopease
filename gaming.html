@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Amazon Gaming
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title">Gaming Accessories</h1>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTy719dbQqf-r9XUM6xxMT4YriBBSXHnX3Utt02Q8f_j1Z-GGGTouPDU37HN8tFvPTkrtNl8Y89rNLhm4_8372aarR2-dViCvPEPhT6ctcXttmg5B8fIfPpIdw">
+
+        <h3>Gaming Mouse</h3>
+
+        <h2>₹179</h2>
+
+        <p>⭐⭐⭐⭐☆</p>
+
+        <button onclick="addToCart(
+        'Gaming Mouse',
+        179,
+        'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTy719dbQqf-r9XUM6xxMT4YriBBSXHnX3Utt02Q8f_j1Z-GGGTouPDU37HN8tFvPTkrtNl8Y89rNLhm4_8372aarR2-dViCvPEPhT6ctcXttmg5B8fIfPpIdw'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOcgspgKe0ILDTpoHfyB3hlXD0JUt5aAs_EY1HRy9-QbbWVOqVLg3jYczHTLfMhsKy-7zHjKrDcJjQ5AxjzKqbgPc7MFCGjsXSTwg6jonVEkF7wXJ10m6uVQ">
+
+        <h3>Gaming Keyboard</h3>
+
+        <h2>₹1,999</h2>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button onclick="addToCart(
+        'Gaming Keyboard',
+        1999,
+        'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOcgspgKe0ILDTpoHfyB3hlXD0JUt5aAs_EY1HRy9-QbbWVOqVLg3jYczHTLfMhsKy-7zHjKrDcJjQ5AxjzKqbgPc7MFCGjsXSTwg6jonVEkF7wXJ10m6uVQ'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcReKbmEcAP7g-HH09NulRCWpHISTIn-MXAPMvnSrRI-YDAlG6d2nkn6IVjMntGAweausrLgBT3-9L1hg8PJ3S361mDqgGNed3cyGiCSrhRTu4Mmo3mRGz1gaA">
+
+        <h3>Gaming Headset</h3>
+
+        <h2>₹2,499</h2>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button onclick="addToCart(
+        'Gaming Headset',
+        2499,
+        'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcReKbmEcAP7g-HH09NulRCWpHISTIn-MXAPMvnSrRI-YDAlG6d2nkn6IVjMntGAweausrLgBT3-9L1hg8PJ3S361mDqgGNed3cyGiCSrhRTu4Mmo3mRGz1gaA'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTrfC97fbAA-7CO_pJcF3X1_liNN8M-QIA3uANNE2kSHnjny-opu7YOkuQCOkcRTMxjtUJC_f_UKFSndJCUv0BjO5RsGOr5H1aV-DXwQFCnkcDIv9LFdX1yco4">
+
+        <h3>Wireless Controller</h3>
+
+        <h2>₹2,999</h2>
+
+        <p>⭐⭐⭐⭐☆</p>
+
+        <button onclick="addToCart(
+        'Wireless Controller',
+        2999,
+        'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTrfC97fbAA-7CO_pJcF3X1_liNN8M-QIA3uANNE2kSHnjny-opu7YOkuQCOkcRTMxjtUJC_f_UKFSndJCUv0BjO5RsGOr5H1aV-DXwQFCnkcDIv9LFdX1yco4'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+        <div class="product">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCowNM92gBSu_4b2rh6wgMa61Kg8vNTVRE03mCW9sLDtefnu-FZ6laq4&s=10">
+
+        <h3>Gaming Chair</h3>
+
+        <h2>₹8,999</h2>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button onclick="addToCart(
+        'Gaming Chair',
+        8999,
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCowNM92gBSu_4b2rh6wgMa61Kg8vNTVRE03mCW9sLDtefnu-FZ6laq4&s=10'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Monitor/Images/310651_kubr8a.png">
+
+        <h3>Gaming Monitor</h3>
+
+        <h2>₹14,999</h2>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button onclick="addToCart(
+        'Gaming Monitor',
+        14999,
+        'https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Monitor/Images/310651_kubr8a.png'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyBxaR5W748MGOiku7FRDzQoJuw02q7kC0mERC_PlztHIds7vkDGSVrw&s=10">
+
+        <h3>Gaming Laptop</h3>
+
+        <h2>₹79,999</h2>
+
+        <p>⭐⭐⭐⭐⭐</p>
+
+        <button onclick="addToCart(
+        'Gaming Laptop',
+        79999,
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyBxaR5W748MGOiku7FRDzQoJuw02q7kC0mERC_PlztHIds7vkDGSVrw&s=10'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoROeEau9VNH2UO7mNol7-K4NX1tjnMhL25V4fetcvMA&s">
+
+        <h3>RGB Gaming Speaker</h3>
+
+        <h2>₹3,999</h2>
+
+        <p>⭐⭐⭐⭐☆</p>
+
+        <button onclick="addToCart(
+        'RGB Gaming Speaker',
+        3999,
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoROeEau9VNH2UO7mNol7-K4NX1tjnMhL25V4fetcvMA&s'
+        )">
+            Add to Cart
+        </button>
+
+    </div>
+
+</section>
+
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
+</html>
+

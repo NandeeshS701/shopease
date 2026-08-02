@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        Amazon Mobiles
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+</header>
+
+<h1 class="title">Smart Phones</h1>
+<section class="products">
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-pro-max-1.jpg">
+<h3>iPhone 16 Pro Max</h3>
+<h2>₹1,19,999</h2>
+<p>⭐⭐⭐⭐⭐</p>
+<button onclick="addToCart('iPhone 16 Pro Max',119999,'https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-pro-max-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgHi55o14ENh2nTFXEMW7SMhpOY0DPOCOrtbr0X0Qe0XnY-q3Lp0xPppr&s=10">
+<h3>Samsung Galaxy S25 Ultra</h3>
+<h2>₹1,24,999</h2>
+<p>⭐⭐⭐⭐⭐</p>
+<button onclick="addToCart('Samsung Galaxy S25 Ultra',124999,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgHi55o14ENh2nTFXEMW7SMhpOY0DPOCOrtbr0X0Qe0XnY-q3Lp0xPppr&s=10')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-13-1.jpg">
+<h3>OnePlus 13</h3>
+<h2>₹69,999</h2>
+<p>⭐⭐⭐⭐☆</p>
+<button onclick="addToCart('OnePlus 13',69999,'https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-13-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-9-pro-xl-1.jpg">
+<h3>Google Pixel 9 Pro</h3>
+<h2>₹99,999</h2>
+<p>⭐⭐⭐⭐⭐</p>
+<button onclick="addToCart('Google Pixel 9 Pro',99999,'https://fdn2.gsmarena.com/vv/pics/google/google-pixel-9-pro-xl-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-15-pro-1.jpg">
+<h3>Xiaomi 15 Pro</h3>
+<h2>₹59,999</h2>
+<p>⭐⭐⭐⭐☆</p>
+<button onclick="addToCart('Xiaomi 15 Pro',59999,'https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-15-pro-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-7-1.jpg">
+<h3>Realme GT 7</h3>
+<h2>₹39,999</h2>
+<p>⭐⭐⭐⭐⭐</p>
+<button onclick="addToCart('Realme GT 7',39999,'https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-7-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/j/g/8/-original-imahggetjmqar5me.jpeg?q=90">
+<h3>Nothing Phone 3</h3>
+<h2>₹44,999</h2>
+<p>⭐⭐⭐⭐☆</p>
+<button onclick="addToCart('Nothing Phone 3',44999,'https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/j/g/8/-original-imahggetjmqar5me.jpeg?q=90')">
+Add to Cart
+</button>
+</div>
+
+
+<div class="product">
+<img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-60-pro-1.jpg">
+<h3>Motorola Edge 60</h3>
+<h2>₹34,999</h2>
+<p>⭐⭐⭐⭐⭐</p>
+<button onclick="addToCart('Motorola Edge 60',34999,'https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-60-pro-1.jpg')">
+Add to Cart
+</button>
+</div>
+
+</section>
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>

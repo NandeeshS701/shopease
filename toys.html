@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        toy section
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title">Toys</h1>
+<section class="products">
+
+    <div class="product">
+        <img src="https://toyshine.in/cdn/shop/files/81okk9reyoL._SL1500_1024x1024@2x.jpg?v=1717044838">
+        <h3>Remote Control Car</h3>
+        <h2>₹1,499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Remote Control Car',1499,'https://toyshine.in/cdn/shop/files/81okk9reyoL._SL1500_1024x1024@2x.jpg?v=1717044838')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB_Zy4n0q1nirDEGv5qFo00eZTcBjoi89iBJ0dAcKyAa_vcCM5I6XClc&s=10">
+        <h3>Building Blocks Set</h3>
+        <h2>₹899</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Building Blocks Set',899,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB_Zy4n0q1nirDEGv5qFo00eZTcBjoi89iBJ0dAcKyAa_vcCM5I6XClc&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500">
+        <h3>Teddy Bear</h3>
+        <h2>₹699</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Teddy Bear',699,'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=500">
+        <h3>Kids Puzzle Game</h3>
+        <h2>₹499</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Kids Puzzle Game',499,'https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=500">
+        <h3>Action Figure Toy</h3>
+        <h2>₹1,299</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Action Figure Toy',1299,'https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeU1WBFLY6yqiZFWIFCUkInCCT9zFcGlCQXKowxyU9dYx9V4OuaTDQccc&s=10">
+        <h3>Kids Bicycle</h3>
+        <h2>₹4,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Kids Bicycle',4999,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeU1WBFLY6yqiZFWIFCUkInCCT9zFcGlCQXKowxyU9dYx9V4OuaTDQccc&s=10')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?w=500">
+        <h3>Educational Toy Set</h3>
+        <h2>₹999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Educational Toy Set',999,'https://images.unsplash.com/photo-1607453998774-d533f65dac99?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1560961911-ba7ef651a56c?w=500">
+        <h3>Soft Toy Collection</h3>
+        <h2>₹799</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Soft Toy Collection',799,'https://images.unsplash.com/photo-1560961911-ba7ef651a56c?w=500')">
+            Add to Cart
+        </button>
+    </div>
+
+
+</section>
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
+</html>
+

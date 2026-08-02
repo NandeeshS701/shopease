@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShopEase - Create Account</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f6fb;
+}
+
+/* Logo */
+
+.shopease-logo{
+
+    text-align:center;
+    font-size:45px;
+    font-weight:bold;
+    color:#0B4F6C;
+    margin-top:35px;
+
+}
+
+.shopease-logo span{
+
+    color:#FF9800;
+
+}
+
+.shopease-logo::after{
+
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#FF9800;
+    margin:10px auto;
+    border-radius:10px;
+
+}
+
+/* Register Box */
+
+.login-box{
+
+    width:380px;
+    margin:35px auto;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:30px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+
+}
+
+.login-box h1{
+
+    font-size:30px;
+    margin-bottom:25px;
+    color:#0B4F6C;
+
+}
+
+.login-box label{
+
+    display:block;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:bold;
+
+}
+
+.login-box input{
+
+    width:100%;
+    height:42px;
+    margin:8px 0 15px;
+    padding:10px;
+    border:1px solid #aaa;
+    border-radius:6px;
+    font-size:15px;
+
+}
+
+.login-box input:focus{
+
+    outline:none;
+    border:2px solid #FF9800;
+
+}
+
+.login-box button{
+
+    width:100%;
+    height:45px;
+    margin-top:15px;
+    border:none;
+    border-radius:25px;
+    background:#FF9800;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.login-box button:hover{
+
+    background:#e68900;
+
+}
+
+.terms{
+
+    font-size:12px;
+    line-height:18px;
+    margin-top:20px;
+    color:#555;
+
+}
+
+.login-box p{
+
+    margin-top:20px;
+    font-size:14px;
+    text-align:center;
+
+}
+
+.login-box a{
+
+    color:#0B4F6C;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.login-box a:hover{
+
+    color:#FF9800;
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:60px;
+    text-align:center;
+    color:#666;
+    font-size:13px;
+
+}
+
+footer div{
+
+    color:#0B4F6C;
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin-top:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="shopease-logo">
+
+    Shop<span>Ease</span>
+
+</div>
+
+<div class="login-box">
+
+<h1>Create Account</h1>
+
+<form onsubmit="register(event)">
+
+<label>Your Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter 10-digit phone number"
+maxlength="10"
+pattern="[0-9]{10}"
+inputmode="numeric"
+oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+required>
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Create password"
+required>
+
+<label>Confirm Password</label>
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Re-enter password"
+required>
+
+<button type="submit">
+
+Create Your ShopEase Account
+
+</button>
+
+</form>
+
+<p class="terms">
+
+By creating an account, you agree to ShopEase's Terms of Service and Privacy Policy.
+
+</p>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Sign In
+
+</a>
+
+</p>
+
+</div>
+
+<footer>
+
+<div>
+
+Terms of Service &nbsp;&nbsp;
+Privacy Policy &nbsp;&nbsp;
+Help Center
+
+</div>
+
+<p>
+
+© 2026 ShopEase. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+function register(event){
+
+event.preventDefault();
+
+let name=document.getElementById("name").value;
+
+let email=document.getElementById("email").value;
+
+let phone=document.getElementById("phone").value;
+
+let password=document.getElementById("password").value;
+
+let confirmPassword=document.getElementById("confirmPassword").value;
+
+if(phone.length!==10){
+
+alert("Phone number must contain exactly 10 digits.");
+
+return;
+
+}
+
+if(password!==confirmPassword){
+
+alert("Passwords do not match.");
+
+return;
+
+}
+
+localStorage.setItem("username",name);
+
+localStorage.setItem("email",email);
+
+localStorage.setItem("phone",phone);
+
+localStorage.setItem("password",password);
+
+alert("🎉 ShopEase Account Created Successfully!");
+
+window.location.href="login.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

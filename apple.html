@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+
+    <script src="script.js"></script> 
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Apple store
+    </div>
+
+    <a href="index.html" class="home-btn">
+        ← Back to Home
+    </a>
+
+</header>
+
+<h1 class="title">Apple Accessories</h1>
+<section class="products">
+
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/w/z/h/-original-imahggetkf6y67sr.jpeg?q=20">
+        <h3>iPhone 16 Pro Max</h3>
+        <h2>₹1,19,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/w/z/h/-original-imahggetkf6y67sr.jpeg?q=20')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+        <h3>iPhone 16</h3>
+        <h2>₹79,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('iPhone 16',79999,'https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61amb0CfMGL._SL1500_.jpg">
+        <h3>iPhone 15</h3>
+        <h2>₹59,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('iPhone 15',59999,'https://m.media-amazon.com/images/I/61amb0CfMGL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71T5NVOgbpL._SL1500_.jpg">
+        <h3>MacBook Air M3</h3>
+        <h2>₹1,04,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('MacBook Air M3',104999,'https://m.media-amazon.com/images/I/71T5NVOgbpL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg">
+        <h3>iPad Pro M4</h3>
+        <h2>₹99,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('iPad Pro M4',99999,'https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71Zf9uUp+GL._SL1500_.jpg">
+        <h3>Apple Watch Series 10</h3>
+        <h2>₹46,999</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Apple Watch Series 10',46999,'https://m.media-amazon.com/images/I/71Zf9uUp+GL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg">
+        <h3>AirPods Pro 2</h3>
+        <h2>₹24,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('AirPods Pro 2',24999,'https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg')">
+        Add to Cart
+        </button>
+    </div>
+
+
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VLqab_4q6NI7U0ShIzwFjoqGNZGebRCmsSdvi4qvngU2xBNT9QiQZ34&s=10">
+        <h3>iMac M3</h3>
+        <h2>₹1,29,999</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('iMac M3',129999,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VLqab_4q6NI7U0ShIzwFjoqGNZGebRCmsSdvi4qvngU2xBNT9QiQZ34&s=10')">
+        Add to Cart
+        </button>
+    </div>
+
+</section>
+</body>
+<style>
+     *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#131921;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.home-btn{
+    text-decoration:none;
+    background:#FFD814;
+    color:#111;
+    padding:10px 20px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #FCD200;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#F7CA00;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+.title{
+    text-align:center;
+    font-size:32px;
+    color:#111;
+    margin:30px 0;
+}
+
+/* Product Section */
+
+.products{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:40px;
+}
+
+/* Product Card */
+
+.product{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:18px;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product:hover{
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+}
+
+/* Product Image */
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.product h3{
+    font-size:18px;
+    color:#0F1111;
+    margin-top:15px;
+    min-height:45px;
+}
+
+/* Price */
+
+.product h2{
+    color:#B12704;
+    font-size:24px;
+    margin:10px 0;
+}
+
+/* Rating */
+
+.product p{
+    color:#FF9900;
+    font-size:17px;
+    margin-bottom:15px;
+}
+
+/* Button */
+
+.product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    background:#FFD814;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#F7CA00;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+    .products{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .product img{
+        height:180px;
+    }
+}
+</style>
