@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Apple Store</title>
 
-<link rel="stylesheet" href="style.css">
-
 <script src="script.js" defer></script>
+
 
 <style>
 
@@ -25,6 +26,7 @@ body{
 
 
 .navbar{
+
     background:#0B4F6C;
     height:70px;
     display:flex;
@@ -32,14 +34,16 @@ body{
     align-items:center;
     padding:0 40px;
     color:white;
-    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
 }
 
 
 .logo{
+
     font-size:32px;
     font-weight:bold;
     color:#FFD166;
+
 }
 
 
@@ -51,7 +55,6 @@ body{
     padding:12px 20px;
     border-radius:8px;
     font-weight:bold;
-    transition:.3s;
 
 }
 
@@ -75,6 +78,7 @@ body{
 
 
 
+
 .products{
 
     width:95%;
@@ -82,16 +86,17 @@ body{
     margin:auto;
 
     display:grid;
+
     grid-template-columns:repeat(4,1fr);
 
     gap:30px;
-    padding-bottom:40px;
 
 }
 
 
 
 .product{
+
 
     background:white;
 
@@ -103,15 +108,13 @@ body{
 
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 
-    transition:.3s;
+    height:500px;
 
     display:flex;
 
     flex-direction:column;
 
     justify-content:space-between;
-
-    height:500px;
 
 }
 
@@ -127,22 +130,14 @@ body{
 
 .product img{
 
+
     width:220px;
+
     height:220px;
 
     object-fit:contain;
 
     margin:auto;
-
-    transition:.3s;
-
-}
-
-
-
-.product:hover img{
-
-    transform:scale(1.05);
 
 }
 
@@ -153,14 +148,6 @@ body{
     color:#0B4F6C;
 
     font-size:22px;
-
-    height:60px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
 
 }
 
@@ -180,23 +167,22 @@ body{
 
     color:#FF9800;
 
-    font-size:18px;
-
 }
 
 
 
 .product button{
 
+
     width:100%;
 
     height:45px;
 
+    background:#FF9800;
+
     border:none;
 
     border-radius:8px;
-
-    background:#FF9800;
 
     color:white;
 
@@ -229,7 +215,6 @@ grid-template-columns:repeat(3,1fr);
 }
 
 
-
 @media(max-width:900px){
 
 .products{
@@ -239,7 +224,6 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
-
 
 
 @media(max-width:600px){
@@ -256,32 +240,40 @@ flex-direction:column;
 
 height:auto;
 
-gap:15px;
-
 padding:20px;
 
+gap:15px;
+
 }
 
-
 }
+
 
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
+
 <header class="navbar">
 
+
 <div class="logo">
+
 Apple Store
+
 </div>
 
 
 <a href="index.html" class="home-btn">
+
 ← Back to Home
+
 </a>
 
 
@@ -289,8 +281,11 @@ Apple Store
 
 
 
+
 <h1 class="title">
+
 Apple Accessories
+
 </h1>
 
 
@@ -300,9 +295,13 @@ Apple Accessories
 
 
 
+
+
 <div class="product">
 
-<img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/w/z/h/-original-imahggetkf6y67sr.jpeg?q=20">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_16_Pro_Max_Desert_Titanium.svg">
+
 
 <h3>iPhone 16 Pro Max</h3>
 
@@ -311,11 +310,12 @@ Apple Accessories
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('iPhone 16 Pro Max',119999,'https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/w/z/h/-original-imahggetkf6y67sr.jpeg?q=20')">
+<button onclick="addToCart('iPhone 16 Pro Max',119999,'https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_16_Pro_Max_Desert_Titanium.svg')">
 
 Add to Cart
 
 </button>
+
 
 </div>
 
@@ -323,9 +323,14 @@ Add to Cart
 
 
 
+
+
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/IPhone_16_Pro_Max_White_Titanium.svg">
+
 
 <h3>iPhone 16</h3>
 
@@ -334,11 +339,12 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('iPhone 16',79999,'https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg')">
+<button onclick="addToCart('iPhone 16',79999,'https://upload.wikimedia.org/wikipedia/commons/a/ad/IPhone_16_Pro_Max_White_Titanium.svg')">
 
 Add to Cart
 
 </button>
+
 
 </div>
 
@@ -346,9 +352,14 @@ Add to Cart
 
 
 
+
+
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/61amb0CfMGL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_15_Pro_Blue_Titanium.svg">
+
 
 <h3>iPhone 15</h3>
 
@@ -357,11 +368,12 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('iPhone 15',59999,'https://m.media-amazon.com/images/I/61amb0CfMGL._SL1500_.jpg')">
+<button onclick="addToCart('iPhone 15',59999,'https://upload.wikimedia.org/wikipedia/commons/1/1e/IPhone_15_Pro_Blue_Titanium.svg')">
 
 Add to Cart
 
 </button>
+
 
 </div>
 
@@ -370,9 +382,13 @@ Add to Cart
 
 
 
+
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/71T5NVOgbpL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/MacBook_Air_M2_Starlight_-_2022.png">
+
 
 <h3>MacBook Air M3</h3>
 
@@ -381,11 +397,12 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('MacBook Air M3',104999,'https://m.media-amazon.com/images/I/71T5NVOgbpL._SL1500_.jpg')">
+<button onclick="addToCart('MacBook Air M3',104999,'https://upload.wikimedia.org/wikipedia/commons/1/12/MacBook_Air_M2_Starlight_-_2022.png')">
 
 Add to Cart
 
 </button>
+
 
 </div>
 
@@ -394,9 +411,13 @@ Add to Cart
 
 
 
+
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/IPad_Pro_2024.png">
+
 
 <h3>iPad Pro M4</h3>
 
@@ -405,7 +426,7 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('iPad Pro M4',99999,'https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg')">
+<button onclick="addToCart('iPad Pro M4',99999,'https://upload.wikimedia.org/wikipedia/commons/1/1b/IPad_Pro_2024.png')">
 
 Add to Cart
 
@@ -420,9 +441,12 @@ Add to Cart
 
 
 
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/71Zf9uUp+GL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Apple_Watch_Series_10.png">
+
 
 <h3>Apple Watch Series 10</h3>
 
@@ -431,7 +455,7 @@ Add to Cart
 <p>⭐⭐⭐⭐☆</p>
 
 
-<button onclick="addToCart('Apple Watch Series 10',46999,'https://m.media-amazon.com/images/I/71Zf9uUp+GL._SL1500_.jpg')">
+<button onclick="addToCart('Apple Watch Series 10',46999,'https://upload.wikimedia.org/wikipedia/commons/7/79/Apple_Watch_Series_10.png')">
 
 Add to Cart
 
@@ -446,9 +470,12 @@ Add to Cart
 
 
 
+
 <div class="product">
 
-<img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/AirPods_Pro_2nd_Generation.png">
+
 
 <h3>AirPods Pro 2</h3>
 
@@ -457,7 +484,7 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('AirPods Pro 2',24999,'https://m.media-amazon.com/images/I/61SUj2aKoEL._SL1500_.jpg')">
+<button onclick="addToCart('AirPods Pro 2',24999,'https://upload.wikimedia.org/wikipedia/commons/8/8e/AirPods_Pro_2nd_Generation.png')">
 
 Add to Cart
 
@@ -465,6 +492,7 @@ Add to Cart
 
 
 </div>
+
 
 
 
@@ -474,7 +502,9 @@ Add to Cart
 
 <div class="product">
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VLqab_4q6NI7U0ShIzwFjoqGNZGebRCmsSdvi4qvngU2xBNT9QiQZ34&s=10">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/IMac_M3_2023.png">
+
 
 <h3>iMac M3</h3>
 
@@ -483,7 +513,7 @@ Add to Cart
 <p>⭐⭐⭐⭐⭐</p>
 
 
-<button onclick="addToCart('iMac M3',129999,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VLqab_4q6NI7U0ShIzwFjoqGNZGebRCmsSdvi4qvngU2xBNT9QiQZ34&s=10')">
+<button onclick="addToCart('iMac M3',129999,'https://upload.wikimedia.org/wikipedia/commons/0/00/IMac_M3_2023.png')">
 
 Add to Cart
 
@@ -491,6 +521,7 @@ Add to Cart
 
 
 </div>
+
 
 
 
