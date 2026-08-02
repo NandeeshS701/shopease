@@ -1,188 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>My Profile | ShopEase</title>
 
-    <style>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:#eaeded;
-        }
-
-        .header{
-            background:#131921;
-            color:white;
-            padding:18px;
-            text-align:center;
-            font-size:30px;
-            font-weight:bold;
-        }
-
-        .profile-box{
-            width:450px;
-            background:white;
-            margin:50px auto;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 15px rgba(0,0,0,.2);
-        }
-
-        .profile{
-            text-align:center;
-            margin-bottom:25px;
-        }
-
-        .profile i{
-            font-size:90px;
-            color:#ff9900;
-        }
-
-        .profile h2{
-            margin-top:15px;
-            color:#111;
-        }
-
-        .details p{
-            font-size:18px;
-            margin:20px 0;
-            color:#333;
-        }
-
-        .details i{
-            width:30px;
-            color:#ff9900;
-        }
-
-        .status{
-            color:green;
-            font-weight:bold;
-        }
-
-        button{
-            width:100%;
-            padding:12px;
-            margin-top:15px;
-            border:none;
-            border-radius:20px;
-            cursor:pointer;
-            font-size:16px;
-            font-weight:bold;
-        }
-
-        .home-btn{
-            background:#ffd814;
-        }
-
-        .home-btn:hover{
-            background:#f7ca00;
-        }
-
-        .logout-btn{
-            background:#ff9900;
-            color:white;
-        }
-
-        .logout-btn:hover{
-            background:#e68a00;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <div class="header">
-    Amazon Clone
+
+    ShopEase
+
 </div>
 
 <div class="profile-box">
 
     <div class="profile">
 
-        <i class="fa-solid fa-circle-user"></i>
+        <div class="profile-avatar" id="avatar">
 
-        <h2>My Profile</h2>
+            U
+
+        </div>
+
+        <h2 id="profileName">
+
+            My Profile
+
+        </h2>
+
+        <p id="profileEmail">
+
+            user@email.com
+
+        </p>
 
     </div>
 
     <div class="details">
 
         <p>
+
             <i class="fa-solid fa-user"></i>
+
             <b>Name :</b>
+
             <span id="name"></span>
+
         </p>
 
         <p>
+
             <i class="fa-solid fa-envelope"></i>
+
             <b>Email :</b>
+
             <span id="email"></span>
+
         </p>
 
         <p>
+
             <i class="fa-solid fa-phone"></i>
+
             <b>Phone :</b>
+
             <span id="phone"></span>
+
         </p>
 
         <p>
+
             <i class="fa-solid fa-circle-check"></i>
+
             <b>Status :</b>
-            <span class="status">Logged In</span>
+
+            <span class="status">
+
+                Logged In
+
+            </span>
+
         </p>
 
     </div>
 
     <button class="home-btn" onclick="goHome()">
+
         🏠 Back to Home
+
     </button>
 
     <button class="logout-btn" onclick="logout()">
+
         🚪 Logout
+
     </button>
-
-</div>
-
-<script>
+    <script>
 
 window.onload = function(){
 
-    if(localStorage.getItem("loggedIn") != "true"){
+    if(localStorage.getItem("loggedIn")!="true"){
 
         alert("Please Login First");
 
-        window.location.href = "login.html";
+        window.location.href="login.html";
 
         return;
 
     }
 
-    document.getElementById("name").innerHTML =
-        localStorage.getItem("username") || "Not Available";
+    let username = localStorage.getItem("username") || "User";
 
-    document.getElementById("email").innerHTML =
-        localStorage.getItem("email") || "Not Available";
+    let email = localStorage.getItem("email") || "Not Available";
 
-    document.getElementById("phone").innerHTML =
-        localStorage.getItem("phone") || "Not Available";
+    let phone = localStorage.getItem("phone") || "Not Available";
+
+    document.getElementById("name").innerHTML = username;
+
+    document.getElementById("email").innerHTML = email;
+
+    document.getElementById("phone").innerHTML = phone;
+
+    document.getElementById("profileName").innerHTML = username;
+
+    document.getElementById("profileEmail").innerHTML = email;
+
+    document.getElementById("avatar").innerHTML = username.charAt(0).toUpperCase();
 
 }
 
 function goHome(){
 
-    window.location.href = "amazon clone.html";
+    window.location.href="index.html";
 
 }
 
@@ -192,11 +153,14 @@ function logout(){
 
     alert("Logged Out Successfully");
 
-    window.location.href = "login.html";
+    window.location.href="login.html";
 
 }
 
 </script>
 
 </body>
+
 </html>
+
+</div>
